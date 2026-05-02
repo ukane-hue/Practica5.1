@@ -1,0 +1,10 @@
+node_modules/
+bin/
+lib/
+*.class
+*.js
+*.json
+pdf_text.txt
+javadoc_screenshot.png
+Entorns*.pdf
+Report_Practica5.1_amb_Diagrama.pdf

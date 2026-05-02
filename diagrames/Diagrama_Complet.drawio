@@ -1,0 +1,133 @@
+<mxfile host="Electron" modified="2024-05-01T12:00:00.000Z" agent="Mozilla/5.0" version="21.6.8" type="device">
+  <diagram id="ClassDiagram_All" name="Class Diagram">
+    <mxGraphModel dx="1200" dy="1200" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1200" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="class_CarteraValors" value="CarteraValors" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="40" width="280" height="86" as="geometry" />
+        </mxCell>
+        <mxCell id="attrs_CarteraValors" value="- List&lt;Valor&gt; valors" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="class_CarteraValors">
+          <mxGeometry y="26" width="280" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="methods_CarteraValors" value="" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="class_CarteraValors">
+          <mxGeometry y="56" width="280" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="class_Client" value="Client" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="360" y="40" width="280" height="86" as="geometry" />
+        </mxCell>
+        <mxCell id="attrs_Client" value="- List&lt;CompteBancari&gt; comptes" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="class_Client">
+          <mxGeometry y="26" width="280" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="methods_Client" value="" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="class_Client">
+          <mxGeometry y="56" width="280" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="class_CompteBancari" value="CompteBancari" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="680" y="40" width="280" height="211" as="geometry" />
+        </mxCell>
+        <mxCell id="attrs_CompteBancari" value="# String numCompte&amp;#xa;# Date dataObertura&amp;#xa;# double saldo&amp;#xa;# double tipusInteres&amp;#xa;# List&lt;Client&gt; clients" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="class_CompteBancari">
+          <mxGeometry y="26" width="280" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="methods_CompteBancari" value="+ CompteBancari(String numCompte, double saldoInicial, double tipusInteres)&amp;#xa;+ void afegirClient(Client client)&amp;#xa;+ void ingressar(double quantitat)&amp;#xa;+ void retirar(double quantitat)&amp;#xa;+ double getSaldo()  return this.saldo }&amp;#xa;+ String getNumCompte()  return this.numCompte }" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="class_CompteBancari">
+          <mxGeometry y="111" width="280" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="class_CompteCorrent" value="CompteCorrent" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="1000" y="40" width="280" height="121" as="geometry" />
+        </mxCell>
+        <mxCell id="attrs_CompteCorrent" value="- List&lt;TargetaCredit&gt; targetes&amp;#xa;- List&lt;FonsInversio&gt; fonsInversio&amp;#xa;- List&lt;CarteraValors&gt; carteresValors" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="class_CompteCorrent">
+          <mxGeometry y="26" width="280" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="methods_CompteCorrent" value="+ CompteCorrent(String numCompte, double saldoInicial, double tipusInteres)&amp;#xa;+ void afegirTargeta(TargetaCredit targeta)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="class_CompteCorrent">
+          <mxGeometry y="81" width="280" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="class_CompteTermini" value="CompteTermini" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="390" width="280" height="96" as="geometry" />
+        </mxCell>
+        <mxCell id="attrs_CompteTermini" value="- int mesosOberta" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="class_CompteTermini">
+          <mxGeometry y="26" width="280" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="methods_CompteTermini" value="+ CompteTermini(String numCompte, double saldoInicial, double tipusInteres, int mesosOberta)&amp;#xa;+ int getMesosOberta()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="class_CompteTermini">
+          <mxGeometry y="56" width="280" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="class_Empleat" value="Empleat" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="360" y="390" width="280" height="86" as="geometry" />
+        </mxCell>
+        <mxCell id="attrs_Empleat" value="- Sucursal sucursal" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="class_Empleat">
+          <mxGeometry y="26" width="280" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="methods_Empleat" value="" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="class_Empleat">
+          <mxGeometry y="56" width="280" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="class_FonsInversio" value="FonsInversio" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="680" y="390" width="280" height="141" as="geometry" />
+        </mxCell>
+        <mxCell id="attrs_FonsInversio" value="- String nom&amp;#xa;- double importFons&amp;#xa;- double rendibilitat&amp;#xa;- Date dataObertura&amp;#xa;- Date dataVenciment" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="class_FonsInversio">
+          <mxGeometry y="26" width="280" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="methods_FonsInversio" value="" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="class_FonsInversio">
+          <mxGeometry y="111" width="280" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="class_Persona" value="Persona" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="1000" y="390" width="280" height="126" as="geometry" />
+        </mxCell>
+        <mxCell id="attrs_Persona" value="# String dni&amp;#xa;# String nom&amp;#xa;# String adreca&amp;#xa;# String telefon" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="class_Persona">
+          <mxGeometry y="26" width="280" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="methods_Persona" value="" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="class_Persona">
+          <mxGeometry y="96" width="280" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="class_Sucursal" value="Sucursal" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="740" width="280" height="96" as="geometry" />
+        </mxCell>
+        <mxCell id="attrs_Sucursal" value="- String identificador&amp;#xa;- String adreca" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="class_Sucursal">
+          <mxGeometry y="26" width="280" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="methods_Sucursal" value="" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="class_Sucursal">
+          <mxGeometry y="66" width="280" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="class_TargetaCredit" value="TargetaCredit" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="360" y="740" width="280" height="126" as="geometry" />
+        </mxCell>
+        <mxCell id="attrs_TargetaCredit" value="- String tipus // Visa, MasterCard, etc.&amp;#xa;- String numero&amp;#xa;- String titular&amp;#xa;- Date dataCaducitat" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="class_TargetaCredit">
+          <mxGeometry y="26" width="280" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="methods_TargetaCredit" value="" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="class_TargetaCredit">
+          <mxGeometry y="96" width="280" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="class_Valor" value="Valor" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="680" y="740" width="280" height="111" as="geometry" />
+        </mxCell>
+        <mxCell id="attrs_Valor" value="- String nomValor&amp;#xa;- int nombreTitols&amp;#xa;- double preuCotitzacio" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="class_Valor">
+          <mxGeometry y="26" width="280" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="methods_Valor" value="" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="class_Valor">
+          <mxGeometry y="81" width="280" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_1" style="endArrow=block;endFill=0;endSize=12;html=1;" edge="1" parent="1" source="class_Client" target="class_Persona">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint as="sourcePoint" />
+            <mxPoint as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_2" style="endArrow=block;endFill=0;endSize=12;html=1;" edge="1" parent="1" source="class_CompteCorrent" target="class_CompteBancari">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint as="sourcePoint" />
+            <mxPoint as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_3" style="endArrow=block;endFill=0;endSize=12;html=1;" edge="1" parent="1" source="class_CompteTermini" target="class_CompteBancari">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint as="sourcePoint" />
+            <mxPoint as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_4" style="endArrow=block;endFill=0;endSize=12;html=1;" edge="1" parent="1" source="class_Empleat" target="class_Persona">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint as="sourcePoint" />
+            <mxPoint as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,19 @@
+<mxfile host="Electron" modified="2024-05-01T12:00:00.000Z" agent="Mozilla/5.0" version="21.6.8" type="device">
+  <diagram id="ClassDiagram_CompteCorrent" name="Class Diagram">
+    <mxGraphModel dx="800" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="class_CompteCorrent" value="CompteCorrent" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="240" y="160" width="350" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="attrs_CompteCorrent" value="- List&lt;TargetaCredit&gt; targetes&amp;#xa;- List&lt;FonsInversio&gt; fonsInversio&amp;#xa;- List&lt;CarteraValors&gt; carteresValors" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="class_CompteCorrent">
+          <mxGeometry y="26" width="350" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="methods_CompteCorrent" value="+ CompteCorrent(String numCompte, double saldoInicial, double tipusInteres)&amp;#xa;+ void afegirTargeta(TargetaCredit targeta)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="class_CompteCorrent">
+          <mxGeometry y="81" width="350" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
